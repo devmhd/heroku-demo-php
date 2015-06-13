@@ -17,4 +17,8 @@
 
 	print_r($result);
 
+	while ($row = pg_fetch_row($result)) {
+	 print_r($row);
+	}
+
 ?>
