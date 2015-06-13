@@ -11,7 +11,10 @@
 	}
 	 
 	// CREATE TABLE Student(id int,name varchar(255),address varchar(255),sex varchar(1));
+	// INSERT INTO Student (id, name, address, sex) VALUES (63,'Shamim Shuvo','Room-3002','m');
 
-	$result = pg_query($db, "INSERT INTO Student (id, name, address, sex) VALUES (63,'Shamim Shuvo','Room-3002','m');");
+	$result = pg_query($db, "SELECT * FROM Student");
+
+	print_r($result);
 
 ?>
