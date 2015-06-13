@@ -10,6 +10,8 @@
 	    exit;
 	}
 	 
-	$result = pg_query($db, "CREATE TABLE Student(id int,name varchar(255),address varchar(255),sex varchar(1));");
+	// CREATE TABLE Student(id int,name varchar(255),address varchar(255),sex varchar(1));
+
+	$result = pg_query($db, "INSERT INTO Student (id, name, address, sex) VALUES (63,'Shamim Shuvo','Room-3002','m');");
 
 ?>
