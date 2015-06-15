@@ -2,7 +2,7 @@
 
 	include_once "../lib.php";
 
-	header('Content-Type: application/json');
+	
 
 
 	// handle malformed request
@@ -57,6 +57,7 @@
 		"answer" => $answer
 		);
 
+	header('Content-Type: application/json');
 	echo json_encode($response);
 
 
