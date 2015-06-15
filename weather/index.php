@@ -16,7 +16,7 @@
 	}
 
 
-	$question = strtolower(urldecode($_GET['q']));
+	$question = trim(strtolower(urldecode($_GET['q'])), '?');
 
 	$question_words = str_word_count($question, 1);
 
